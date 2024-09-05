@@ -117,10 +117,6 @@ mod wasm;
 #[cfg(test)]
 mod tests;
 
-#[cfg(target_arch = "wasm32")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
 // log for logging (optional).
 #[cfg(feature = "logging")]
 use log;
